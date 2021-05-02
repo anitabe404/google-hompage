@@ -1,3 +1,28 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+}
+header {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+a.rh-head {
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px;
+    color: #222;
+}
+.lh-head {
+    display: inline-block;
+    flex-grow: 1;
+}
 footer {
-    
+
 }
