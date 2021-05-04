@@ -9,6 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    color: #222
 }
 a:hover, a:active {
     text-decoration: underline;
@@ -51,9 +52,10 @@ a.lhh {
     height: 247px;
 }
 #r5 {
-    background-color: gray;
+
     width: 100%;
     height: 93px;
+    background-color: gray;
 }
 .rhs {
     display: inline-block;
@@ -123,4 +125,47 @@ svg {
 }
 .gb_da {
     padding: 4px;
+}
+.ftr {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0px 20px 0px 20px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+.pHiOh {
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
+}
+.KxwPGc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cns {
+    order: 2;
+}.abs {
+    justify-content: flex-start;
+    min-width: 30%;
+    order: 1;
+}
+.pts {
+    justify-content: flex-end;
+    min-width: 30%;
+    order: 3;
+}
+.set {
+    position: relative;
+}
+@media only screen and (max-width:1200px) {
+    .cns {
+        order: 0;
+        width: 100%;
+        justify-content: center;
+    }
+    .KxwPGc {
+        justify-content: space-evenly;
+    }
 }
