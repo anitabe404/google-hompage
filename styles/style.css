@@ -37,7 +37,6 @@ a.lhh {
     align-items: center;
 }
 #r2 {
-    background-color: blue;
     width: 100%;
     height: 290px;
 }
@@ -168,4 +167,12 @@ svg {
     .KxwPGc {
         justify-content: space-evenly;
     }
+}
+.logo-c {
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+}
+.logo {
+    align-self: flex-end;
 }
