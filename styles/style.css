@@ -2,6 +2,14 @@ a {
     text-decoration: none;
     color: rgba(0,0,0,0.87);
 }
+div {
+    display: block;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 a:hover, a:active {
     text-decoration: underline;
 }
@@ -14,20 +22,6 @@ a.lhh {
     margin: 0 5px;
     color: #222;
  }
- a.gb_D {
-     color: #000;
- }
- .gb_Da {
-
- }
-div {
-    display: block;
-}
-body {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
 /*
 .container {
     display: flex;
@@ -85,7 +79,7 @@ body {
     display: flex;
 }
 
-.svgdiv {
+#svgdiv {
     
 
 }
@@ -105,20 +99,28 @@ svg {
     border-radius: 2px;
     height: 40px;
     width: 40px;
-    
+
 }
 .hsd {
+    display: flex;
     float: right;
     position: relative;
-
     padding: 0 4px;
     padding-left: 30px;
     flex: 0 0 auto;
 }
+
 .dg-w {
     display: inline;
-
-}
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}  
 .dg-sw {
-
+ 
+}
+.gb_da {
+    padding: 4px;
 }
