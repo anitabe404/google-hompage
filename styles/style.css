@@ -1,40 +1,45 @@
+/* Set height and padding of html doc */
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+body, input, button {
+    font-size: 14px;
+    font-family: arial, sans-serif;
+}
+div.container {
+    display: flex;
+    flex-direction: column;
+}
 a {
     text-decoration: none;
     color: rgba(0,0,0,0.87);
+    padding: 5px;
+    margin: 0 5px;
 }
-div {
-    display: block;
-}
-body {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    color: #222
+a:first-of-type {
+    margin-left: 15px;
 }
 a:hover, a:active {
     text-decoration: underline;
 }
-a.lhh:first-of-type {
-    margin-left: 15px;
-}
-a.lhh {
-    display: inline-block;
-    padding: 5px;
-    margin: 0 5px;
-    color: #222;
- }
-/*
-.container {
-    display: flex;
-    flex-direction: column;
-}
-*/
-#r1 {
-    background-color: gray;
-    /*width: 100%;*/
+
+#row1 {
     display: flex;
     height: 60px;
     align-items: center;
+}
+#row1 > div {
+    flex-grow: 1;
+}
+div.flt-right {
+    display: flex; 
+    justify-content: flex-end; /* Align items on the right-hand side of the page. */
+    align-items: center; /* Vertically center items */
+}
+div.flt-right img:hover {
+    background-color: lightgray;
 }
 #r2 {
     width: 100%;
