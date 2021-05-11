@@ -43,9 +43,13 @@ div.flt-right {
 div.flt-right img:hover {
     background-color: lightgray;
 }
-#r2 {
+#row2 {
     width: 100%;
-    height: 290px;
+    min-height: 92px;
+    height: calc(100% - 560px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 #r3 {
     background-color: gray;
@@ -175,11 +179,4 @@ svg {
         justify-content: space-evenly;
     }
 }
-.logo-c {
-    display: flex;
-    justify-content: center;
-    align-content: flex-end;
-}
-.logo {
-    align-self: flex-end;
-}
+
