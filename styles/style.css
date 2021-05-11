@@ -63,8 +63,6 @@ div.flt-right img:hover {
     height: 93px;
     background-color: gray;
 }
-<<<<<<< HEAD
-=======
 .rhs {
     display: inline-block;
     flex-grow: 1;
@@ -185,4 +183,3 @@ svg {
 .logo {
     align-self: flex-end;
 }
->>>>>>> 270075c (Added Google logo. Removed background color)
