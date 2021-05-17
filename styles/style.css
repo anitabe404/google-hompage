@@ -43,27 +43,113 @@ div.flt-right {
 div.flt-right img:hover {
     background-color: lightgray;
 }
+.gb_da {
+    border-radius: 50%;
+}
 #row2 {
     width: 100%;
     min-height: 92px;
     height: calc(100% - 560px);
+    max-height: 290px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
-#r3 {
-    background-color: gray;
+#row3 {
     width: 100%;
     height: 160px;
+    display: flex;
+    justify-content: center;
 }
-#r4 {
-    background-color: blue;
-    width: 100%;
-    height: 247px;
+form {
+   /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
 }
-#r5 {
+#sbox {
 
-    width: 100%;
-    height: 93px;
-    background-color: gray;
+    font-size: 16px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+
+}
+#sbox input[type="text"] {
+    flex: 100%;
+    height: 34px;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+}
+#mag {
+    margin-left: 10px;
+}
+#mic{
+    margin-right: 10px;
+}
+input[type="submit"] {
+    /* Some properties may be duplicate. Check against higher level selectors */
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    margin: 11px 14px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+}
+.search-buttons {
+    padding-top: 18px;
+    height: 70px;
+}
+input[type="submit"]:hover {
+    border: 1px solid black;
+}
+#row4 {
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+form {
+    margin: auto;
+}
+#row5 {
+    display: flex;
+    flex-wrap: wrap; /* allows items to be shifted to another line */
+    padding: 0 20px;
+    background-color: #f2f2f2;
+    justify-content: space-between;
+}
+
+.ftr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#abs {
+   justify-content: flex-start;
+    min-width: 30%;
+    order: 1;
+}
+#cns {
+    order: 2;
+}
+#pts {
+    justify-content: flex-end;
+    order: 3;
+    min-width: 30%;
+
+}
+@media only screen and (max-width: 1200px) {
+    .ftr {
+        justify-content: space-evenly;
+    }
+    #cns {
+        order: 0;
+        width: 100%;
+        justify-content: center;
+    }
 }
